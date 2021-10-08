@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+.main-content,
+.main-footer {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.main-header, 
+.intro, 
+.main-footer {
+    text-align: center;
+    font-size: small;
+}
+
+.main-header, 
+.intro {
+    padding: 5px 10px;
+}
+
+.main-header {
+    background-color: rgb(4, 194, 194);
+    color: white;
+    text-transform: uppercase;
+}
+
+.intro p, 
+.main-footer p {
+    color: gray;
+}
+
+hr {
+    border-width: 3px 0px 1.5px;
+    border-color: black;
+    padding: 1px;
+    max-width: 95%;
+}
+
+.hr2 {
+    border-width: 1px;
+    padding: 0;
+}
+
+footer p, 
+::placeholder {
+    font-style: italic;
+}
+
+form {
+    line-height: 200%;
+}
+
+fieldset {
+    border: 0 none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input, 
+select, 
+textarea {
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 0 none;
+    padding: .5em;
+    transition: background-color 1s ease;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select {
+    min-height: 3em;
+}
+
+.flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+#zip {
+    width: 50%;
+}
+
+textarea {
+    min-height: 6em;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 3em;
+    background-color: rgb(4, 194, 194);
+    color: white;
+    font-weight: bold;
+    margin: 2px 0px;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+.other-topics ::placeholder {
+    text-align: left;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+    outline-color: blue;
+    background-color: lightsalmon;
+}
+
+@media (min-width: 768px) {
+
+    .flex-pair {
+        flex-direction: row;
+        margin: 1em;
+    }
+
+    .flex-pair input, 
+    select {
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
+
+    .flex-pair label {
+        flex-basis: 25%;
+        height: 50px;
+        margin: auto 0;
+    }
+
+    #zip {
+        max-width: 25%
+    }
+
+    .main-header {
+        max-width: 100%;
+    }
+
+
+}
